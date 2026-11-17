@@ -3,23 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "An ETH vault starter using OpenZeppelin Contracts and Hardhat 3",
+  "description": "Minimal Ethereum smart contract project using Hardhat and OpenZeppelin Contracts",
   "license": "MIT",
-  "engines": { "node": ">=24.0.0 <25" },
+  "engines": {
+    "node": ">=24.0.0 <25"
+  },
   "scripts": {
     "build": "hardhat build",
-    "test": "hardhat test",
-    "typecheck": "tsc --noEmit",
-    "check": "npm run build && npm run typecheck && npm test",
-    "node": "hardhat node",
-    "deploy:local": "hardhat ignition deploy ignition/modules/EthVault.ts --network localhost",
-    "deploy:sepolia": "hardhat ignition deploy ignition/modules/EthVault.ts --network sepolia"
+    "node": "hardhat node"
   },
-  "dependencies": { "@openzeppelin/contracts": "5.6.1" },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.6.1"
+  },
   "devDependencies": {
-    "hardhat": "3.22.0",
-    "@nomicfoundation/hardhat-toolbox-viem": "5.0.7",
-    "typescript": "~5.9.0",
-    "@types/node": "^24.0.0"
+    "hardhat": "3.22.0"
   }
 }
