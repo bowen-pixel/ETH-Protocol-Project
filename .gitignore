@@ -1,0 +1,12 @@
+node_modules/
+artifacts/
+cache/
+coverage/
+dist/
+.env
+.env.*
+!.env.example
+ignition/deployments/chain-31337/
+.DS_Store
+*.pem
+*.key
