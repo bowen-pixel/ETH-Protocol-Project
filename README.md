@@ -88,10 +88,14 @@ Keep Ignition's public-network deployment records in Git once reviewed; local ch
 
 ## GitHub
 
-The local repository is prepared for a private GitHub repository named `ethereum-protocol-starter`. If publishing manually with an authenticated GitHub CLI:
+Repository: [bowen-pixel/ethereum-protocol-starter](https://github.com/bowen-pixel/ethereum-protocol-starter) (private).
 
 ```sh
-gh repo create ethereum-protocol-starter --private --source=. --remote=origin --push
+git clone https://github.com/bowen-pixel/ethereum-protocol-starter.git
+cd ethereum-protocol-starter
+nvm use
+npm ci
+npm run check
 ```
 
 ## References
